@@ -168,8 +168,13 @@
 }
 
 @media (max-width:330px){
+    .design h2, .design h2{
+        font-size: 26px;
+    }
+
     .design p, .fotografia p{
         width: 80vw;
+        font-size: 16px;
     }
 }
 
