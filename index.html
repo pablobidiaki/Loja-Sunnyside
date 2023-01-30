@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquerry.css">
     <title>Sunnyside</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="nav-bar">
             <div>
                 <p>sunnyside</p>
             </div>
             <div id="opcoes-nav">
-                <ul>
+                <ul id="lista">
                     <li>Sobre</li>
                     <li>Serviços</li>
                     <li>Projetos</li>
@@ -33,22 +34,23 @@
             <h1>nós somos criativos</h1>
         </section>
     </header>
-    <main>
+    <main id="main">
         <div class="container">
-            <div>
+            <div class="foto1-mobile"></div>
+            <div class="texto1">
                 <h2>Transforme sua marca</h2>
                 <p>Somos uma agência criativa de serviço completo especializada em ajudar marcas a crescer rapidamente. Envolva seus clientes por meio de visuais atraentes que fazem a maior parte do marketing para você.</p>
-                <p style="margin-bottom: 50px;"><a href="#">Leia mais</a></p>
+                <a href="#">Leia mais</a>
             </div>
-            <img class="photo" src="imgs/desktop/image-transform.jpg" alt="">
-            <img class="photo" src="imgs/mobile/image-stand-out.jpg" alt="">
-            <div>
+            <div class="foto1"></div>
+            <div class="foto2"></div>
+            <div class="texto2">
                 <h2>Destaque-se para o público certo</h2>
                 <p>Usando uma fórmula colaborativa de designers, pesquisadores, fotógrafos, cinegrafistas e redatores, construiremos e estenderemos sua marca em locais digitais.</p>
-                <p style="margin-bottom: 50px;"><a href="#">Leia mais</a></p>
+                <a href="#">Leia mais</a>
             </div>
             <section class="design">
-                <h2>Design Gráfico.</h2>
+                <h2>Design Gráfico</h2>
                 <p>Um ótimo design torna você memorável. Entregamos obras de arte que destacam a mensagem da sua marca e capturam a atenção de clientes em potencial.</p>
             </section>
             <section class="fotografia">
@@ -59,26 +61,32 @@
 
         <p class="testemunhas">Testemunhas de clientes</p>
 
-        <img class="cliente" src="imgs/image-emily.jpg" alt="">
-        <p class="texto-testemunha">Confiamos na Sunnyside e eles entregaram, garantindo que nossas necessidades fossem atendidas e os prazos sempre cumpridos.</p>
-        <p class="nome-testemunha">Emily R.</p>
-        <p class="cargo-testemunha">Diretor de marketing</p>
-
-        <img class="cliente" src="imgs/image-thomas.jpg" alt="">
-        <p class="texto-testemunha">O entusiasmo de Sunnyside, juntamente com seu grande interesse no sucesso de nossa marca, tornou a experiência satisfatória e agradável.</p>
-        <p class="nome-testemunha">Thomas S.</p>
-        <p class="cargo-testemunha">Chefe de operação</p>
-
-        <img class="cliente" src="imgs/image-jennie.jpg" alt="">
-        <p class="texto-testemunha">Resultado final incrível! Nossas vendas aumentaram mais de 400% quando trabalhamos com a Sunnyside. Altamente recomendado!</p>
-        <p class="nome-testemunha">Jennie F.</p>
-        <p class="cargo-testemunha">Dono do negócio</p>
+        <div class="testeminhas-container">
+            <div>
+                <img class="cliente" src="imgs/image-emily.jpg" alt="">
+                <p class="texto-testemunha">Confiamos na Sunnyside e eles entregaram, garantindo que nossas necessidades fossem atendidas e os prazos sempre cumpridos.</p>
+                <p class="nome-testemunha">Emily R.</p>
+                <p class="cargo-testemunha">Diretor de marketing</p>
+            </div>
+            <div>
+                <img class="cliente" src="imgs/image-thomas.jpg" alt="">
+                <p class="texto-testemunha">O entusiasmo de Sunnyside, juntamente com seu grande interesse no sucesso de nossa marca, tornou a experiência satisfatória e agradável.</p>
+                <p class="nome-testemunha">Thomas S.</p>
+                <p class="cargo-testemunha">Chefe de operação</p>
+            </div>
+            <div>
+                <img class="cliente" src="imgs/image-jennie.jpg" alt="">
+                <p class="texto-testemunha">Resultado final incrível! Nossas vendas aumentaram mais de 400% quando trabalhamos com a Sunnyside. Altamente recomendado!</p>
+                <p class="nome-testemunha">Jennie F.</p>
+                <p class="cargo-testemunha">Dono do negócio</p>
+            </div>
+        </div>
 
         <div class="imagens-finais">
-            <img src="imgs/mobile/image-gallery-milkbottles.jpg" alt="">
-            <img src="imgs/mobile/image-gallery-orange.jpg" alt="">
-            <img src="imgs/mobile/image-gallery-cone.jpg" alt="">
-            <img src="imgs/mobile/image-gallery-sugar-cubes.jpg" alt="">
+            <div class="leite"></div>
+            <div class="laranja"></div>
+            <div class="cone"></div>
+            <div class="sugar"></div>
         </div>
 
         <div class="info-finais">
@@ -96,6 +104,15 @@
             </div>
         </div>
     </main>
+
+    <div id="modal" class="none">
+        <ul>
+            <li>Sobre</li>
+            <li>Serviços</li>
+            <li>Projetos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

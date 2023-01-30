@@ -1,0 +1,147 @@
+@media (max-width:1110px){
+    .texto1 h2, .texto2 h2{
+        font-size: 40px;
+    }
+
+    .texto1 p, .texto2 p{
+        font-size: 18px;
+    }
+
+    .texto1 a, .textos2 a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:850px){
+    .texto1 h2, .texto2 h2{
+        font-size: 30px;
+    }
+
+    .texto1 p, .texto2 p{
+        font-size: 16px;
+    }
+
+    .texto1 a, .textos2 a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:800px){
+    .texto1 h2, .texto2 h2{
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    .texto1 a, .texto2 a{
+        margin-bottom: 50px;
+    }
+
+    #opcoes-nav{
+        display: none;
+    }
+
+    #burguer{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .container{
+        grid-template-columns: auto;
+    }
+
+    .foto1-mobile{
+        display: block;
+        background-image: url(../imgs/mobile/image-transform.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .foto1{
+        display: none;
+    }
+
+    .foto2{
+        background-image: url(../imgs/mobile/image-stand-out.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 70vw;
+    }
+
+    .testeminhas-container{
+        grid-template-columns: auto;
+    }
+
+    .imagens-finais{
+        grid-template-columns: 50vw auto;
+    }
+
+    .leite{
+        background-image: url(../imgs/mobile/image-gallery-milkbottles.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 40vw;
+    }
+
+    .laranja{
+        background-image: url(../imgs/mobile/image-gallery-orange.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 40vw;
+    }
+
+    .cone{
+        background-image: url(../imgs/mobile/image-gallery-cone.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 40vw;
+    }
+
+    .sugar{
+        background-image: url(../imgs/mobile/image-gallery-sugar-cubes.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 40vw;
+    }
+
+    .texto-testemunha{
+        width: 50vw;
+    }
+
+    .fotografia h2, .design h2{
+        padding-top: 280px;
+    }
+
+    .design p, .fotografia p {
+        width: 40vw;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:540px){
+    .design p, .fotografia p{
+        width: 60vw;
+    }
+
+    .texto1 h2, .texto1 p, .texto1 a, .texto2 h2, .texto2 p, .texto2 a{
+        width: 70vw;
+    }
+}
+
+@media (max-width:330px){
+    .design p, .fotografia p{
+        width: 80vw;
+    }
+}

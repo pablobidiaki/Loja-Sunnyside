@@ -66,6 +66,12 @@ a{
     margin: 0px 30px;
     color: white;
     font-family: 'Barlow', sans-serif;
+    cursor: pointer;
+}
+
+#nav-bar #opcoes-nav li:hover{
+    transition: .5s;
+    transform: scale(1.2);
 }
 
 #nav-bar #opcoes-nav .contato{
@@ -75,6 +81,13 @@ a{
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+#nav-bar #opcoes-nav .contato:hover{
+    transition: .5s;
+    background-color: rgb(144, 212, 197);
+    color: white;
 }
 
 #nav-bar div p{
@@ -128,44 +141,90 @@ a{
 
 .container{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: auto 50vw;
 }
 
-.container h2{
-    display: block;
-    font-size: 80px;
-    margin: 0 auto;
+.texto1, .texto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto1 h2, .texto2 h2{
     text-align: justify;
+    font-size: 50px;
+    width: 35vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.photo{
-    width: 100%;
+.texto1 p,.texto2 p{
+    font-size: 20px;
+    text-align: justify;
+    width: 35vw;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(168, 168, 166);
+}
+
+.texto1 a,.texto2 a {
+    display: block;
+    margin: 0 auto;
+    width: 35vw;
+    font-size: 22px;
+}
+
+.texto1 a:hover, .texto2 a:hover{
+    transition: .5s;
+    color: #252525;
+}
+
+.foto1{
+    background-image: url(../imgs/desktop/image-transform.jpg);
+    height:40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+}
+
+.foto2{
+    background-image: url(../imgs/desktop/image-stand-out.jpg);
+    height:40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
 }
 
 .design{
-    background-image: url(../imgs/mobile/image-graphic-design.jpg);
-    width: 100%;
+    background-image: url(../imgs/desktop/image-graphic-design.jpg);
     height:600px;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
-
 }
 
 .design h2{
     color: rgb(33, 87, 74);
-    padding-top: 370px;
+    padding-top: 350px;
     font-weight: 900;
 }
 
 .design p{
     color: rgb(61, 119, 109);
     font-weight: 600;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 25vw;
 }
 
 .fotografia{
-    background-image: url(../imgs/mobile/image-photography.jpg);
-    width: 100%;
+    background-image: url(../imgs/desktop/image-photography.jpg);
     height:600px;
     background-size:cover;
     background-repeat: no-repeat;
@@ -173,8 +232,7 @@ a{
 }
 
 .fotografia h2{
-    margin-top: 0px;
-    padding-top: 370px;
+    padding-top: 350px;
     color: rgb(26, 80, 102);
     font-weight: 900;
 }
@@ -182,14 +240,26 @@ a{
 .fotografia p{
     color: rgb(22, 103, 141);
     font-weight: 600;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 25vw;
 }
 
 .testemunhas{
-    margin: 50px 0px;
+    margin: 100px 0px 70px 0px;
+    text-align: center;
     text-transform: uppercase;
     color: rgb(168, 168, 166);
     letter-spacing: 1.5px;
+    font-size: 22px;
     font-weight: 900;
+}
+
+.testeminhas-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
 }
 
 .cliente {
@@ -205,6 +275,11 @@ a{
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 30px;
+    width: 25vw;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .nome-testemunha{
@@ -213,6 +288,7 @@ a{
     font-size: 20px;
     font-weight: 900;
     margin: 0px;
+    text-align: center;
 }
 
 .cargo-testemunha{
@@ -220,15 +296,40 @@ a{
     color: rgb(215, 214, 212);
     font-weight: 700;
     margin: 0px 0px 100px 0px;
+    text-align: center;
 }
 
 .imagens-finais{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 25vw 25vw 25vw auto;
 }
 
-.imagens-finais img{
-    height: 50vw;
+.leite{
+    background-image: url(../imgs/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 25vw;
+}
+
+.laranja{
+    background-image: url(../imgs/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 25vw;
+}
+
+.cone{
+    background-image: url(../imgs/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 25vw;
+}
+
+.sugar{
+    background-image: url(../imgs/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 25vw;
 }
 
 .info-finais{
@@ -247,7 +348,7 @@ a{
 .info-finais ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .info-finais ul li{
@@ -256,11 +357,60 @@ a{
     color: rgb(61, 119, 109);
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.info-finais ul li:hover{
+    transition: .5s;
+    color: white;
 }
 
 .redes-sociais{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 50px;
+}
+
+.redes-sociais img{
+    margin: 0px 20px ;
+    cursor: pointer;
+}
+
+.redes-sociais img:hover{
+    transition: .5s;
+    transform: scale(1.4);
+}
+
+.foto1-mobile{
+    display: none;
+    background-image: url(../imgs/mobile/image-transform.jpg);
+}
+
+.nav-bar-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal{
+    position: absolute;
+    top: 18%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.405);
+    transition: 1s;
+    opacity: 0;
+}
+
+#modal li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    margin: 5px;
 }
