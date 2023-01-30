@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: url(../imgs/desktop/image-header.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1{
+    font-size:40px ;
+    color: white;
+    font-family: 'Fraunces', serif;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-align: center;
+    margin: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;    
+    font-family: 'Fraunces', serif;
+}
+
+a{
+    color: lightsalmon;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#nav-bar #opcoes-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#nav-bar #opcoes-nav li{
+    list-style-type: none;
+    margin: 0px 30px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+#nav-bar #opcoes-nav .contato{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+}
+
+#nav-bar div p{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#burguer{
+    display: none;
+}
+
+#bars{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar1{
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    transition: 1s;
+}
+
+#bar2{
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    transition: 1s;
+}
+
+#bar3{
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+.container h2{
+    display: block;
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.photo{
+    width: 100%;
+}
+
+.design{
+    background-image: url(../imgs/mobile/image-graphic-design.jpg);
+    width: 100%;
+    height:600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.design h2{
+    color: rgb(33, 87, 74);
+    padding-top: 370px;
+    font-weight: 900;
+}
+
+.design p{
+    color: rgb(61, 119, 109);
+    font-weight: 600;
+}
+
+.fotografia{
+    background-image: url(../imgs/mobile/image-photography.jpg);
+    width: 100%;
+    height:600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fotografia h2{
+    margin-top: 0px;
+    padding-top: 370px;
+    color: rgb(26, 80, 102);
+    font-weight: 900;
+}
+
+.fotografia p{
+    color: rgb(22, 103, 141);
+    font-weight: 600;
+}
+
+.testemunhas{
+    margin: 50px 0px;
+    text-transform: uppercase;
+    color: rgb(168, 168, 166);
+    letter-spacing: 1.5px;
+    font-weight: 900;
+}
+
+.cliente {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.texto-testemunha{
+    font-family: 'Barlow', sans-serif;
+    color: rgb(167, 168, 171);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.nome-testemunha{
+    font-family: 'Barlow', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+.cargo-testemunha{
+    font-family: 'Barlow', sans-serif;
+    color: rgb(215, 214, 212);
+    font-weight: 700;
+    margin: 0px 0px 100px 0px;
+}
+
+.imagens-finais{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+
+.imagens-finais img{
+    height: 50vw;
+}
+
+.info-finais{
+    background-color: rgb(144, 212, 197);
+}
+
+.info-finais h2{
+    margin: 0;
+    padding: 50px 0px 30px 0px;
+    color: rgb(61, 119, 109);
+    font-weight: 900;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-finais ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info-finais ul li{
+    list-style-type: none;
+    padding-bottom: 80px;
+    color: rgb(61, 119, 109);
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
