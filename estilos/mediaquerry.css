@@ -130,6 +130,15 @@
     }
 }
 
+@media (max-width:573px) {
+    #modal{
+        position: absolute;
+        top: 18%;
+        left: 88%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media (max-width:540px){
     .design p, .fotografia p{
         width: 60vw;
@@ -140,8 +149,44 @@
     }
 }
 
+@media (max-width:460px) {
+    #modal{
+        position: absolute;
+        top: 18%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:370px) {
+    #modal{
+        position: absolute;
+        top: 18%;
+        left: 82%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media (max-width:330px){
     .design p, .fotografia p{
         width: 80vw;
+    }
+}
+
+@media (max-width:320px) {
+    #modal{
+        position: absolute;
+        top: 18%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:283px) {
+    #modal{
+        position: absolute;
+        top: 18%;
+        left: 76%;
+        transform: translate(-50%, -50%);
     }
 }
